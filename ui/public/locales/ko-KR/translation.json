@@ -344,6 +344,8 @@
     "translator": "번역기",
     "inpainter": "인페인터",
     "renderer": "렌더러",
+    "translateOneByOne": "텍스트를 개별 번역",
+    "translateOneByOneDescription": "모든 텍스트를 한 번에 보내지 않고 각 텍스트 블록을 개별적으로 LLM에 전송합니다. 소규모 모델의 정확도가 향상되지만 시간이 더 걸릴 수 있습니다.",
     "keybinds": "단축키",
     "keybindsDescription": "도구 및 작업에 대한 키보드 단축키를 사용자 정의합니다.",
     "shortcutIncreaseBrushSize": "브러시 크기 키우기",

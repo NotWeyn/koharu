@@ -345,6 +345,8 @@
     "translator": "Translator",
     "inpainter": "Inpainter",
     "renderer": "Renderer",
+    "translateOneByOne": "Translate one by one",
+    "translateOneByOneDescription": "Send each text block to the LLM individually instead of all at once. Improves accuracy for smaller models but takes longer.",
     "keybinds": "Keybinds",
     "keybindsDescription": "Customize keyboard shortcuts for tools and actions.",
     "shortcutIncreaseBrushSize": "Increase Brush Size",

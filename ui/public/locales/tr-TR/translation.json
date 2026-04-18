@@ -344,6 +344,8 @@
     "translator": "Çevirici",
     "inpainter": "İnpaint Motoru",
     "renderer": "Render Motoru",
+    "translateOneByOne": "Metinleri Tek Tek Çevir",
+    "translateOneByOneDescription": "Tüm metni tek seferde göndermek yerine her bir metin bloğunu bağımsız olarak LLM'e gönderir. Küçük modellerde doğruluğu artırır ancak daha uzun sürebilir.",
     "keybinds": "Tuş Atamaları",
     "keybindsDescription": "Araçlar ve eylemler için klavye kısa yollarını özelleştirin.",
     "shortcutIncreaseBrushSize": "Fırça Boyutunu Artır",

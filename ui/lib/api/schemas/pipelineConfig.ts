@@ -17,5 +17,6 @@ export interface PipelineConfig {
   ocr?: string
   renderer?: string
   segmenter?: string
+  translate_one_by_one?: boolean
   translator?: string
 }

@@ -344,6 +344,8 @@
     "translator": "翻訳器",
     "inpainter": "インペインター",
     "renderer": "レンダラー",
+    "translateOneByOne": "テキストを個別に翻訳",
+    "translateOneByOneDescription": "すべてのテキストを一度に送信するのではなく、各テキストブロックを個別にLLMに送信します。小規模モデルでの精度が向上しますが、時間がかかります。",
     "keybinds": "キーバインド",
     "keybindsDescription": "ツールやアクションのショートカットキーをカスタマイズします。",
     "shortcutIncreaseBrushSize": "ブラシサイズを大きくする",

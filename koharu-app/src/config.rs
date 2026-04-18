@@ -77,6 +77,10 @@ pub struct PipelineConfig {
     pub translator: String,
     pub inpainter: String,
     pub renderer: String,
+    /// When true, each text block is translated individually instead of
+    /// batching all blocks into a single LLM call.
+    #[serde(default)]
+    pub translate_one_by_one: bool,
 }
 
 impl Default for PipelineConfig {
@@ -90,6 +94,7 @@ impl Default for PipelineConfig {
             translator: "llm".to_string(),
             inpainter: "aot-inpainting".to_string(),
             renderer: "koharu-renderer".to_string(),
+            translate_one_by_one: false,
         }
     }
 }

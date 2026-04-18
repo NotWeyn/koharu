@@ -48,6 +48,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import { Switch } from '@/components/ui/switch'
 import { useUpdater, type UpdaterStatus } from '@/components/Updater'
 import { getLlmCatalog, getGetLlmCatalogQueryKey } from '@/lib/api/llm/llm'
 import type {
@@ -501,6 +502,22 @@ function EnginesPane({
           </Select>
         </div>
       ))}
+
+      {/* Translate one-by-one toggle */}
+      <div className='flex items-center justify-between rounded-lg border border-border bg-card px-4 py-3'>
+        <div className='space-y-0.5'>
+          <Label className='text-xs font-medium'>{t('settings.translateOneByOne')}</Label>
+          <p className='text-[11px] leading-snug text-muted-foreground'>
+            {t('settings.translateOneByOneDescription')}
+          </p>
+        </div>
+        <Switch
+          checked={pipeline.translate_one_by_one ?? false}
+          onCheckedChange={(checked) =>
+            onChange({ ...pipeline, translate_one_by_one: checked })
+          }
+        />
+      </div>
     </div>
   )
 }

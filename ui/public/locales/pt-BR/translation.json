@@ -345,6 +345,8 @@
     "translator": "Tradutor",
     "inpainter": "Inpainter",
     "renderer": "Renderizador",
+    "translateOneByOne": "Traduzir um por um",
+    "translateOneByOneDescription": "Envia cada bloco de texto individualmente para o LLM em vez de todos de uma vez. Melhora a precisão em modelos menores, mas demora mais.",
     "keybinds": "Atalhos de teclado",
     "keybindsDescription": "Personalize os atalhos de teclado para ferramentas e ações.",
     "shortcutIncreaseBrushSize": "Aumentar o tamanho do pincel",

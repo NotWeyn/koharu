@@ -344,6 +344,8 @@
     "translator": "翻译器",
     "inpainter": "修补器",
     "renderer": "渲染器",
+    "translateOneByOne": "逐条翻译",
+    "translateOneByOneDescription": "将每个文本块单独发送给 LLM 进行翻译，而不是一次性发送全部。对较小的模型可提高准确性，但耗时更长。",
     "keybinds": "快捷键",
     "keybindsDescription": "自定义工具和操作的快捷键。",
     "shortcutIncreaseBrushSize": "增大笔刷大小",

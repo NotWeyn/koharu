@@ -739,10 +739,20 @@ pub async fn llm_generate(
                 .await?;
         }
         None => {
-            state
-                .llm
-                .translate(&mut doc, language, system_prompt)
-                .await?;
+            let one_by_one = state.config.read().await.pipeline.translate_one_by_one;
+            if one_by_one {
+                for block in &mut doc.text_blocks {
+                    state
+                        .llm
+                        .translate(block, language, system_prompt)
+                        .await?;
+                }
+            } else {
+                state
+                    .llm
+                    .translate(&mut doc, language, system_prompt)
+                    .await?;
+            }
         }
     }
 
